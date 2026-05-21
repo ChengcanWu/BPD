@@ -1,0 +1,15 @@
+# MAS + BPD settings (paper default: epsilon=1.5)
+# mas_structure: flat (5+5+5) | hierarchy (5+2+5)
+model: deepseek-chat
+mas_structure: hierarchy
+epsilon: 1.5
+malicious_agent_id: 1
+num_respondents: 5
+num_advisors: 2
+
+data_path: MMLU/college_chemistry/test-00000-of-00001.parquet
+question_start: 0
+question_end: 1
+
+record_path: outputs/run.log
+results_dir: results/chemistry
